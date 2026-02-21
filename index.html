@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Drug Pharma Egypt – Presentation 2025</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- =========== HOME =========== -->
+    <div class="view active" id="view-home">
+        <div class="bg-circles">
+            <div class="circle c1"></div>
+            <div class="circle c2"></div>
+            <div class="circle c3"></div>
+        </div>
+        <div class="user-card">
+            <div class="user-avatar"><img src="wageh_photo.jpg" alt="Mohamed Wageeh" /></div>
+            <div class="user-info">
+                <p class="user-name">Mohamed Wageeh</p>
+                <p class="user-meta"><span class="label">Age</span><span class="value">34</span></p>
+                <p class="user-meta"><span class="label">Join</span><span class="value">2022</span></p>
+            </div>
+        </div>
+        <div class="company-center">
+            <div class="company-logo"><img src="drug_pharma_logo.png" alt="Drug Pharma Egypt" /></div>
+            <h1 class="company-name">Drug Pharma Egypt</h1>
+            <p class="company-tagline">تقديم الأداء السنوي · 2025</p>
+            <div class="company-divider"></div>
+            <p class="company-sub">Excellence in Pharmaceutical Distribution</p>
+        </div>
+        <button class="nav-btn next-btn" onclick="goView('view-agenda')">
+            <span>الأجندة</span>
+            <svg viewBox="0 0 24 24">
+                <path d="M15 19l-7-7 7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" />
+            </svg>
+        </button>
+        <div class="slide-indicator">Home</div>
+    </div>
+
+    <!-- =========== AGENDA =========== -->
+    <div class="view" id="view-agenda">
+        <div class="bg-circles">
+            <div class="circle c1"></div>
+            <div class="circle c2"></div>
+        </div>
+        <div class="agenda-header">
+            <div class="agenda-logo-mini"><img src="drug_pharma_logo.png" alt="" /></div>
+            <div>
+                <h2 class="agenda-title">الأجندة</h2>
+                <p class="agenda-subtitle">Drug Pharma Egypt · 2025 — اختر القسم</p>
+            </div>
+        </div>
+        <div class="agenda-grid">
+            <div class="agenda-card" onclick="goView('view-history')">
+                <div class="agenda-num">01</div>
+                <div class="agenda-icon"><svg viewBox="0 0 40 40" fill="none">
+                        <circle cx="20" cy="14" r="7" stroke="currentColor" stroke-width="2" />
+                        <path d="M6 36 Q6 26 20 26 Q34 26 34 36" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" />
+                    </svg></div>
+                <div class="agenda-content">
+                    <h3>History</h3>
+                    <p>مسيرة محمد وجيه · نمو المنطقتين</p>
+                </div>
+                <div class="agenda-arrow">›</div>
+            </div>
+            <div class="agenda-card" onclick="goView('view-reps')">
+                <div class="agenda-num">02</div>
+                <div class="agenda-icon"><svg viewBox="0 0 40 40" fill="none">
+                        <circle cx="14" cy="14" r="6" stroke="currentColor" stroke-width="2" />
+                        <circle cx="26" cy="14" r="6" stroke="currentColor" stroke-width="2" />
+                        <path d="M4 34 Q4 24 14 24 Q20 24 26 24 Q36 24 36 34" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" />
+                    </svg></div>
+                <div class="agenda-content">
+                    <h3>المناديب</h3>
+                    <p>4 مناديب · بروفايل · أرقام 12 شهر</p>
+                </div>
+                <div class="agenda-arrow">›</div>
+            </div>
+            <div class="agenda-card" onclick="goView('view-kpi')">
+                <div class="agenda-num">03</div>
+                <div class="agenda-icon"><svg viewBox="0 0 40 40" fill="none">
+                        <rect x="4" y="28" width="6" height="8" rx="1" fill="currentColor" opacity=".3" />
+                        <rect x="13" y="20" width="6" height="16" rx="1" fill="currentColor" opacity=".5" />
+                        <rect x="22" y="12" width="6" height="24" rx="1" fill="currentColor" opacity=".7" />
+                        <rect x="31" y="4" width="6" height="32" rx="1" fill="currentColor" />
+                        <path d="M6 26 L16 18 L25 10 L34 2" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" />
+                    </svg></div>
+                <div class="agenda-content">
+                    <h3>مؤشرات الأداء <span class="tag-kpi">KPI</span></h3>
+                    <p>الأداء الرئيسي والنتائج</p>
+                </div>
+                <div class="agenda-arrow">›</div>
+            </div>
+            <div class="agenda-card" onclick="goView('view-customers')">
+                <div class="agenda-num">04</div>
+                <div class="agenda-icon"><svg viewBox="0 0 40 40" fill="none">
+                        <circle cx="20" cy="14" r="7" stroke="currentColor" stroke-width="2" />
+                        <path d="M6 36 Q6 26 20 26 Q34 26 34 36" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" />
+                        <path d="M28 8 L32 12 M32 8 L28 12" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" />
+                    </svg></div>
+                <div class="agenda-content">
+                    <h3>العملاء</h3>
+                    <p>قاعدة العملاء وتحليل النمو</p>
+                </div>
+                <div class="agenda-arrow">›</div>
+            </div>
+            <div class="agenda-card" onclick="goView('view-shams')">
+                <div class="agenda-num">05</div>
+                <div class="agenda-icon"><svg viewBox="0 0 40 40" fill="none">
+                        <rect x="4" y="16" width="32" height="20" rx="2" stroke="currentColor" stroke-width="2" />
+                        <path d="M4 20 L20 10 L36 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        <rect x="15" y="24" width="10" height="12" rx="1" stroke="currentColor" stroke-width="1.5" />
+                    </svg></div>
+                <div class="agenda-content">
+                    <h3>مخزن الشمس</h3>
+                    <p>بروفايل الشركات والمخازن</p>
+                </div>
+                <div class="agenda-arrow">›</div>
+            </div>
+            <div class="agenda-card" onclick="goView('view-plan2026')">
+                <div class="agenda-num">06</div>
+                <div class="agenda-icon"><svg viewBox="0 0 40 40" fill="none">
+                        <rect x="5" y="8" width="30" height="28" rx="3" stroke="currentColor" stroke-width="2" />
+                        <path d="M5 16 L35 16" stroke="currentColor" stroke-width="1.5" />
+                        <rect x="12" y="4" width="4" height="8" rx="2" fill="currentColor" />
+                        <rect x="24" y="4" width="4" height="8" rx="2" fill="currentColor" />
+                        <path d="M12 24 L18 30 L28 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg></div>
+                <div class="agenda-content">
+                    <h3>خطة 2026</h3>
+                    <p>الأهداف والاستراتيجيات</p>
+                </div>
+                <div class="agenda-arrow">›</div>
+            </div>
+            <div class="agenda-card wide" onclick="goView('view-proposal')">
+                <div class="agenda-num">07</div>
+                <div class="agenda-icon"><svg viewBox="0 0 40 40" fill="none">
+                        <path d="M20 4 L36 12 L36 28 Q36 36 20 40 Q4 36 4 28 L4 12 Z" stroke="currentColor"
+                            stroke-width="2" />
+                        <path d="M13 20 L18 25 L27 15" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg></div>
+                <div class="agenda-content">
+                    <h3>المقترح</h3>
+                    <p>التوصيات والمقترحات المستقبلية</p>
+                </div>
+                <div class="agenda-arrow">›</div>
+            </div>
+        </div>
+        <button class="nav-btn prev-btn" onclick="goView('view-home')">
+            <svg viewBox="0 0 24 24">
+                <path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" />
+            </svg>
+            <span>الرئيسية</span>
+        </button>
+        <div class="slide-indicator">Agenda</div>
+    </div>
+
+    <!-- =========== HISTORY =========== -->
+    <div class="view scrollable" id="view-history">
+        <div class="bg-circles">
+            <div class="circle c1"></div>
+            <div class="circle c2"></div>
+        </div>
+        <div class="section-inner" style="padding-top:70px;padding-bottom:90px">
+            <div class="history-header">
+                <div class="history-title-block">
+                    <span class="history-badge">History</span>
+                    <h2 class="history-title">محمد وجيه</h2>
+                    <p class="history-join">انضم في أكتوبر 2022 · منطقة الشرقية</p>
+                </div>
+                <div class="history-avatar"><img src="wageh_photo.jpg" alt="Mohamed Wageeh" /></div>
+            </div>
+            <div class="history-regions">
+                <div class="region-card">
+                    <div class="region-label">
+                        <div class="region-icon">📍</div>
+                        <div>
+                            <div class="region-name">منطقة الشرقية</div>
+                            <div class="region-date">منذ أكتوبر 2022</div>
+                        </div>
+                    </div>
+                    <div class="growth-row">
+                        <div class="growth-col before">
+                            <div class="growth-tag">قبل</div>
+                            <div class="growth-num">650 ألف</div>
+                            <div class="growth-unit">جنيه</div>
+                            <div class="growth-note">مندوب واحد</div>
+                        </div>
+                        <div class="growth-arrow">
+                            <div class="arrow-line"></div>
+                            <div class="arrow-pct">+169%</div>
+                        </div>
+                        <div class="growth-col after">
+                            <div class="growth-tag green">الآن</div>
+                            <div class="growth-num highlight">1.75 مليون</div>
+                            <div class="growth-unit">جنيه</div>
+                            <div class="growth-note">3 مناديب</div>
+                        </div>
+                    </div>
+                    <div class="chart-canvas-wrap" style="height:110px"><canvas id="chart-sharqiya"></canvas></div>
+                </div>
+                <div class="promotion-badge">
+                    <div class="promo-icon">⭐</div>
+                    <div class="promo-text">
+                        <div class="promo-title">ترقية</div>
+                        <div class="promo-date">يناير 2025</div>
+                        <div class="promo-desc">+ إضافة منطقة القناة</div>
+                    </div>
+                </div>
+                <div class="region-card">
+                    <div class="region-label">
+                        <div class="region-icon">📍</div>
+                        <div>
+                            <div class="region-name">منطقة القناة</div>
+                            <div class="region-date">منذ يناير 2025</div>
+                        </div>
+                    </div>
+                    <div class="growth-row">
+                        <div class="growth-col before">
+                            <div class="growth-tag">قبل</div>
+                            <div class="growth-num">120 ألف</div>
+                            <div class="growth-unit">جنيه</div>
+                            <div class="growth-note">مندوب واحد</div>
+                        </div>
+                        <div class="growth-arrow">
+                            <div class="arrow-line"></div>
+                            <div class="arrow-pct">+125%</div>
+                        </div>
+                        <div class="growth-col after">
+                            <div class="growth-tag green">الآن</div>
+                            <div class="growth-num highlight">250–300 ألف</div>
+                            <div class="growth-unit">جنيه</div>
+                            <div class="growth-note">مندوب واحد</div>
+                        </div>
+                    </div>
+                    <div class="chart-canvas-wrap" style="height:110px"><canvas id="chart-canal"></canvas></div>
+                </div>
+            </div>
+            <!-- Distributive target with REAL images -->
+            <div class="dist-target-section">
+                <div class="dist-title"><span class="dist-icon">🎯</span>الهدف التوزيعي</div>
+                <div class="dist-images">
+                    <div class="dist-img-box">
+                        <div class="dist-img-frame"><img src="dist_before.jpg" alt="الهدف قبل" /></div>
+                        <p class="dist-img-label">قبل التطوير</p>
+                    </div>
+                    <div class="dist-img-box">
+                        <div class="dist-img-frame"><img src="dist_after.jpg" alt="الهدف بعد" /></div>
+                        <p class="dist-img-label">بعد التطوير</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="nav-btn prev-btn" onclick="goView('view-agenda')"><svg viewBox="0 0 24 24">
+                <path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" />
+            </svg><span>الأجندة</span></button>
+        <div class="slide-indicator">History</div>
+    </div>
+
+    <!-- =========== REPS =========== -->
+    <div class="view scrollable" id="view-reps">
+        <div class="bg-circles">
+            <div class="circle c1"></div>
+            <div class="circle c2"></div>
+        </div>
+        <div class="section-inner" style="padding-top:70px;padding-bottom:100px">
+            <div class="reps-header">
+                <h2 class="section-title">المناديب</h2>
+                <p class="section-sub">تحصيلات 2025 · الشرقية والقناة</p>
+            </div>
+            <div class="reps-grid">
+                <div class="rep-card premium" onclick="openProfile('wageeh')">
+                    <div class="rep-crown">👑</div>
+                    <div class="rep-photo-wrap premium-photo"><img src="wageh_photo.jpg" alt="Mohamed Wageeh" /></div>
+                    <div class="rep-name">Mohamed Wageeh</div>
+                    <div class="rep-role">District Manager</div>
+                    <div class="rep-total">7,405,461 جنيه</div>
+                    <div class="rep-view-btn">عرض البروفايل</div>
+                </div>
+                <div class="rep-card" onclick="openProfile('magdy')">
+                    <div class="rep-photo-wrap"><img src="ahmed_magdy.jpg" alt="Ahmed Magdy" /></div>
+                    <div class="rep-name">Ahmed Magdy</div>
+                    <div class="rep-role">مندوب مبيعات</div>
+                    <div class="rep-total">3,293,576 جنيه</div>
+                    <div class="rep-view-btn">عرض البروفايل</div>
+                </div>
+                <div class="rep-card" onclick="openProfile('azouny')">
+                    <div class="rep-photo-wrap"><img src="azouny.jpg" alt="Muhammed Azouny" /></div>
+                    <div class="rep-name">Muhammed Azouny</div>
+                    <div class="rep-role">مندوب مبيعات</div>
+                    <div class="rep-total">4,339,982 جنيه</div>
+                    <div class="rep-view-btn">عرض البروفايل</div>
+                </div>
+                <div class="rep-card" onclick="openProfile('mahmoud')">
+                    <div class="rep-photo-wrap"><img src="mahmoud_abdelaal.jpg" alt="Mahmoud Abdelaal" /></div>
+                    <div class="rep-name">Mahmoud Abdelaal</div>
+                    <div class="rep-role">مندوب مبيعات</div>
+                    <div class="rep-total">2,783,087 جنيه</div>
+                    <div class="rep-view-btn">عرض البروفايل</div>
+                </div>
+            </div>
+            <div class="monthly-section">
+                <h3 class="monthly-title">تحصيلات 2025 الشهرية</h3>
+                <div class="table-scroll">
+                    <table class="monthly-table">
+                        <thead>
+                            <tr>
+                                <th>الشهر</th>
+                                <th class="col-wageh">وجيه 👑</th>
+                                <th class="col-azouny">عزوني</th>
+                                <th class="col-magdy">مجدي</th>
+                                <th class="col-canal">القناة</th>
+                                <th class="col-total">الإجمالي</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body"></tbody>
+                        <tfoot id="table-foot"></tfoot>
+                    </table>
+                </div>
+                <div class="chart-section">
+                    <h3 class="chart-title">📈 التحول خلال أشهر 2025 – الأربعة مناديب</h3>
+                    <div style="position:relative;height:280px;width:100%"><canvas id="chart-monthly-all"></canvas>
+                    </div>
+                </div>
+                <h3 class="chart-title" style="margin-top:24px">📊 كل مندوب لوحده</h3>
+                <div class="individual-charts">
+                    <div class="ind-chart-box">
+                        <div class="ind-chart-name wageh-col">👑 وجيه</div>
+                        <div style="position:relative;height:150px"><canvas id="chart-ind-wageh"></canvas></div>
+                    </div>
+                    <div class="ind-chart-box">
+                        <div class="ind-chart-name azouny-col">عزوني</div>
+                        <div style="position:relative;height:150px"><canvas id="chart-ind-azouny"></canvas></div>
+                    </div>
+                    <div class="ind-chart-box">
+                        <div class="ind-chart-name magdy-col">مجدي</div>
+                        <div style="position:relative;height:150px"><canvas id="chart-ind-magdy"></canvas></div>
+                    </div>
+                    <div class="ind-chart-box">
+                        <div class="ind-chart-name canal-col">القناة</div>
+                        <div style="position:relative;height:150px"><canvas id="chart-ind-canal"></canvas></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="nav-btn prev-btn" onclick="goView('view-agenda')"><svg viewBox="0 0 24 24">
+                <path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" />
+            </svg><span>الأجندة</span></button>
+        <div class="slide-indicator">المناديب</div>
+    </div>
+
+    <!-- =========== KPI =========== -->
+    <div class="view scrollable" id="view-kpi">
+        <div class="bg-circles">
+            <div class="circle c1"></div>
+            <div class="circle c2"></div>
+        </div>
+        <div class="section-inner" style="padding-top:70px;padding-bottom:90px">
+            <div class="sec-header-block">
+                <div class="sec-icon-big">📊</div>
+                <h2 class="section-title">مؤشرات الأداء الرئيسية</h2>
+                <p class="section-sub">Key Performance Indicators · 2025</p>
+            </div>
+            <div class="kpi-grid">
+                <div class="kpi-card" style="--delay:0s">
+                    <div class="kpi-num">01</div>
+                    <div class="kpi-icon">🌅</div>
+                    <div class="kpi-title">Start يومي · Plan أسبوعي</div>
+                    <p class="kpi-desc">تحديد أهداف اليوم ووضع الخطة الأسبوعية لكل مندوب بشكل منهجي ومنظم</p>
+                    <div class="kpi-bar">
+                        <div class="kpi-bar-fill" style="width:92%"></div>
+                    </div>
+                    <div class="kpi-pct">92%</div>
+                </div>
+                <div class="kpi-card" style="--delay:.1s">
+                    <div class="kpi-num">02</div>
+                    <div class="kpi-icon">📋</div>
+                    <div class="kpi-title">متابعة التقرير اليومي وعدد الزيارات</div>
+                    <p class="kpi-desc">مراجعة تقارير المناديب اليومية وتحليل عدد الزيارات لكل عميل وضمان الجودة</p>
+                    <div class="kpi-bar">
+                        <div class="kpi-bar-fill" style="width:88%"></div>
+                    </div>
+                    <div class="kpi-pct">88%</div>
+                </div>
+                <div class="kpi-card" style="--delay:.2s">
+                    <div class="kpi-num">03</div>
+                    <div class="kpi-icon">🎯</div>
+                    <div class="kpi-title">العمل على Target متقسم</div>
+                    <p class="kpi-desc">تقسيم الهدف الشهري على العملاء بشكل استراتيجي ومتابعة الإنجاز أسبوعياً</p>
+                    <div class="kpi-bar">
+                        <div class="kpi-bar-fill" style="width:85%"></div>
+                    </div>
+                    <div class="kpi-pct">85%</div>
+                </div>
+                <div class="kpi-card" style="--delay:.3s">
+                    <div class="kpi-num">04</div>
+                    <div class="kpi-icon">💰</div>
+                    <div class="kpi-title">العمل على المديونية</div>
+                    <p class="kpi-desc">متابعة وتحصيل المديونيات المتراكمة والعمل على تقليل أرصدة الآجل</p>
+                    <div class="kpi-bar">
+                        <div class="kpi-bar-fill" style="width:79%"></div>
+                    </div>
+                    <div class="kpi-pct">79%</div>
+                </div>
+                <div class="kpi-card" style="--delay:.4s">
+                    <div class="kpi-num">05</div>
+                    <div class="kpi-icon">🔄</div>
+                    <div class="kpi-title">الزيارات (Double Visit)</div>
+                    <p class="kpi-desc">الزيارات بتتم مرة واحدة أسبوعياً وفي القناة بالتبادل لضمان تغطية شاملة ومتابعة
+                        مستمرة</p>
+                    <div class="kpi-bar">
+                        <div class="kpi-bar-fill" style="width:87%"></div>
+                    </div>
+                    <div class="kpi-pct">87%</div>
+                </div>
+                <div class="kpi-card wide-kpi" style="--delay:.5s">
+                    <div class="kpi-num">06</div>
+                    <div class="kpi-icon">🩺</div>
+                    <div class="kpi-title">Feed Back · Stand Activity · Doctors</div>
+                    <p class="kpi-desc">جمع تقارير الفيدباك من المناديب عن نشاط الأطباء وستاند الأكتيفيتي لتعزيز التواجد
+                        العلاجي في المنطقة</p>
+                    <div class="kpi-bar">
+                        <div class="kpi-bar-fill" style="width:83%"></div>
+                    </div>
+                    <div class="kpi-pct">83%</div>
+                </div>
+            </div>
+        </div>
+        <button class="nav-btn prev-btn" onclick="goView('view-agenda')"><svg viewBox="0 0 24 24">
+                <path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" />
+            </svg><span>الأجندة</span></button>
+        <div class="slide-indicator">KPIs</div>
+    </div>
+
+    <!-- =========== CUSTOMERS =========== -->
+    <div class="view scrollable" id="view-customers">
+        <div class="bg-circles">
+            <div class="circle c1"></div>
+            <div class="circle c2"></div>
+        </div>
+        <div class="section-inner" style="padding-top:70px;padding-bottom:90px">
+            <div class="sec-header-block">
+                <div class="sec-icon-big">🤝</div>
+                <h2 class="section-title">العملاء</h2>
+                <p class="section-sub">نمو قاعدة العملاء · 2022–2025</p>
+            </div>
+
+            <!-- Sub-tabs -->
+            <div class="cust-tabs">
+                <button class="ctab active" onclick="showCustTab('canal-tab',this)">📍 القناة</button>
+                <button class="ctab" onclick="showCustTab('sharq-tab',this)">📍 الشرقية</button>
+                <button class="ctab" onclick="showCustTab('problems-tab',this)">🔧 تطوير نظام الشغل مع بعض
+                    العملاء</button>
+                <button class="ctab" onclick="showCustTab('otc-tab',this)">💊 عملاء OTC</button>
+            </div>
+
+            <!-- TAB: Canal -->
+            <div class="cust-tab-content active" id="canal-tab">
+                <div class="cust-region-wrap">
+                    <div class="region-growth-card">
+                        <div class="rgc-title">منطقة القناة</div>
+                        <div class="rgc-numbers">
+                            <div class="rgc-box old">
+                                <div class="rgc-val" id="cn-old">0</div>
+                                <div class="rgc-lbl">عميل سابقاً</div>
+                            </div>
+                            <div class="rgc-arrow">→</div>
+                            <div class="rgc-box new">
+                                <div class="rgc-val green" id="cn-new">0</div>
+                                <div class="rgc-lbl">عميل حالياً</div>
+                            </div>
+                        </div>
+                        <div class="breakdown-row">
+                            <div class="breakdown-pill cash">💵 23 نقدي</div>
+                            <div class="breakdown-pill mixed">🔄 130 متنوع</div>
+                        </div>
+                    </div>
+                    <div class="cust-chart-wrap"><canvas id="chart-cust-canal"></canvas></div>
+                </div>
+            </div>
+
+            <!-- TAB: Sharqiya -->
+            <div class="cust-tab-content" id="sharq-tab">
+                <div class="cust-region-wrap">
+                    <div class="region-growth-card">
+                        <div class="rgc-title">منطقة الشرقية</div>
+                        <div class="rgc-numbers">
+                            <div class="rgc-box old">
+                                <div class="rgc-val" id="sh-old">0</div>
+                                <div class="rgc-lbl">عميل سابقاً</div>
+                            </div>
+                            <div class="rgc-arrow">→</div>
+                            <div class="rgc-box new">
+                                <div class="rgc-val green" id="sh-new">0</div>
+                                <div class="rgc-lbl">عميل حالياً</div>
+                            </div>
+                        </div>
+                        <div class="breakdown-row">
+                            <div class="breakdown-pill cash">💵 63 نقدي</div>
+                            <div class="breakdown-pill mixed">🔄 112 متنوع</div>
+                        </div>
+                    </div>
+                    <div class="cust-chart-wrap"><canvas id="chart-cust-sharq"></canvas></div>
+                </div>
+            </div>
+
+            <!-- TAB: Problems -->
+            <div class="cust-tab-content" id="problems-tab">
+                <div class="problems-grid">
+                    <div class="prob-card">
+                        <div class="prob-ico">🏪</div>
+                        <div class="prob-name">محمد طلعت</div>
+                    </div>
+                    <div class="prob-card">
+                        <div class="prob-ico">🏪</div>
+                        <div class="prob-name">السراج</div>
+                    </div>
+                    <div class="prob-card">
+                        <div class="prob-ico">🏪</div>
+                        <div class="prob-name">الهلال</div>
+                    </div>
+                    <div class="prob-card">
+                        <div class="prob-ico">🏪</div>
+                        <div class="prob-name">الشفا</div>
+                    </div>
+                    <div class="prob-card">
+                        <div class="prob-ico">🏪</div>
+                        <div class="prob-name">أسامة عثمان</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB: OTC -->
+            <div class="cust-tab-content" id="otc-tab">
+                <div class="otc-grid">
+                    <div class="otc-card sales">
+                        <div class="otc-header"><span class="otc-badge">مناديب البيع</span><span class="otc-count">9
+                                عملاء</span></div>
+                        <div class="otc-products">
+                            <span>دولاركس</span><span>زيمايلاز</span><span>هاي كول</span>
+                            <span>ايفي نيوترا</span><span>تريبسالين</span><span>مجموعة الأطفال</span>
+                        </div>
+                        <div class="otc-revenue">💰 120 ألف</div>
+                    </div>
+                    <div class="otc-card promo">
+                        <div class="otc-header"><span class="otc-badge">مناديب الدعاية</span><span class="otc-count">8
+                                عملاء</span></div>
+                        <div class="otc-products">
+                            <span>زيمايلاز</span><span>تريبسالين</span><span>ايفي نيوترا</span><span>هاي كول</span>
+                        </div>
+                        <div class="otc-revenue">💰 80 ألف</div>
+                    </div>
+                </div>
+
+                <!-- OTC Detailed Customer Table -->
+                <div class="otc-detail-section">
+                    <h3 class="otc-detail-title">📋 تفاصيل عملاء OTC</h3>
+                    <div class="table-scroll">
+                        <table class="otc-detail-table">
+                            <thead>
+                                <tr>
+                                    <th>م</th>
+                                    <th>العميل</th>
+                                    <th>المسئول</th>
+                                    <th>العنوان</th>
+                                    <th>الأصناف</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="otc-row-sales">
+                                    <td>1</td>
+                                    <td>ص الكمال</td>
+                                    <td><span class="otc-type-badge sales-badge">بيع</span></td>
+                                    <td>الزقازيق</td>
+                                    <td>دولاركس</td>
+                                </tr>
+                                <tr class="otc-row-sales">
+                                    <td>2</td>
+                                    <td>الكفور</td>
+                                    <td><span class="otc-type-badge sales-badge">بيع</span></td>
+                                    <td>كفور نجم</td>
+                                    <td>هاي كول · زيمايلاز · ايفي</td>
+                                </tr>
+                                <tr class="otc-row-sales">
+                                    <td>3</td>
+                                    <td>عماد</td>
+                                    <td><span class="otc-type-badge sales-badge">بيع</span></td>
+                                    <td>الابراهيميه</td>
+                                    <td>ايفي · زيمايلاز</td>
+                                </tr>
+                                <tr class="otc-row-sales">
+                                    <td>4</td>
+                                    <td>مركزين سامي عبدالله</td>
+                                    <td><span class="otc-type-badge sales-badge">بيع</span></td>
+                                    <td>نشوه</td>
+                                    <td>كل أصناف الأطفال</td>
+                                </tr>
+                                <tr class="otc-row-sales">
+                                    <td>5</td>
+                                    <td>محمد السويدي</td>
+                                    <td><span class="otc-type-badge sales-badge">بيع</span></td>
+                                    <td>بلبيس</td>
+                                    <td>هاي كول</td>
+                                </tr>
+                                <tr class="otc-row-sales">
+                                    <td>6</td>
+                                    <td>سالم</td>
+                                    <td><span class="otc-type-badge sales-badge">بيع</span></td>
+                                    <td>مشتول</td>
+                                    <td>تربسالين · هاي كول · زيمايلاز</td>
+                                </tr>
+                                <tr class="otc-row-sales">
+                                    <td>7</td>
+                                    <td>راويه</td>
+                                    <td><span class="otc-type-badge sales-badge">بيع</span></td>
+                                    <td>القنايات</td>
+                                    <td>تربسالين · ايفي نيوترا · هاي كول أو دولاركس</td>
+                                </tr>
+                                <tr class="otc-row-sales">
+                                    <td>8</td>
+                                    <td>احمد سعيد</td>
+                                    <td><span class="otc-type-badge sales-badge">بيع</span></td>
+                                    <td>كفر الزقازيق</td>
+                                    <td>هاي كول · زيمايلاز</td>
+                                </tr>
+                                <tr class="otc-row-sales">
+                                    <td>9</td>
+                                    <td>سالي سمير</td>
+                                    <td><span class="otc-type-badge sales-badge">بيع</span></td>
+                                    <td>اسماعليه</td>
+                                    <td>ايفي نيوترا</td>
+                                </tr>
+                                <tr class="otc-row-sales">
+                                    <td>10</td>
+                                    <td>عيسي</td>
+                                    <td><span class="otc-type-badge sales-badge">بيع</span></td>
+                                    <td>غزاله</td>
+                                    <td>تربسالين</td>
+                                </tr>
+                                <tr class="otc-row-promo">
+                                    <td>11</td>
+                                    <td>حسام</td>
+                                    <td><span class="otc-type-badge promo-badge">دعاية</span></td>
+                                    <td>الصالحية</td>
+                                    <td>ايفي · هاي كول</td>
+                                </tr>
+                                <tr class="otc-row-promo">
+                                    <td>12</td>
+                                    <td>شيماء</td>
+                                    <td><span class="otc-type-badge promo-badge">دعاية</span></td>
+                                    <td>منيه سلمنت</td>
+                                    <td>زيمايلاز</td>
+                                </tr>
+                                <tr class="otc-row-promo">
+                                    <td>13</td>
+                                    <td>صبري</td>
+                                    <td><span class="otc-type-badge promo-badge">دعاية</span></td>
+                                    <td>كفر ابراش</td>
+                                    <td>ثري 400 · فيتوسيل</td>
+                                </tr>
+                                <tr class="otc-row-promo">
+                                    <td>14</td>
+                                    <td>الابرار</td>
+                                    <td><span class="otc-type-badge promo-badge">دعاية</span></td>
+                                    <td>ام معفن</td>
+                                    <td>تربسالين · زيمايلاز</td>
+                                </tr>
+                                <tr class="otc-row-promo">
+                                    <td>15</td>
+                                    <td>اشرف فودة</td>
+                                    <td><span class="otc-type-badge promo-badge">دعاية</span></td>
+                                    <td>شلشلمون</td>
+                                    <td>هاي كول</td>
+                                </tr>
+                                <tr class="otc-row-promo">
+                                    <td>16</td>
+                                    <td>محمد جمال</td>
+                                    <td><span class="otc-type-badge promo-badge">دعاية</span></td>
+                                    <td>الشبانات</td>
+                                    <td>ايفي نيوترا</td>
+                                </tr>
+                                <tr class="otc-row-promo">
+                                    <td>17</td>
+                                    <td>حسن جاب الله</td>
+                                    <td><span class="otc-type-badge promo-badge">دعاية</span></td>
+                                    <td>منشيه عمر</td>
+                                    <td>تربسالين · زيمايلاز</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <button class="nav-btn prev-btn" onclick="goView('view-agenda')"><svg viewBox="0 0 24 24">
+                <path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" />
+            </svg><span>الأجندة</span></button>
+        <div class="slide-indicator">العملاء</div>
+    </div>
+
+    <!-- =========== SHAMS WAREHOUSE =========== -->
+    <div class="view scrollable" id="view-shams">
+        <div class="bg-circles">
+            <div class="circle c1"></div>
+            <div class="circle c2"></div>
+        </div>
+        <div class="section-inner" style="padding-top:70px;padding-bottom:90px">
+            <div class="sec-header-block">
+                <div class="sec-icon-big">🏭</div>
+                <h2 class="section-title">مخزن الشمس</h2>
+                <p class="section-sub">شبكة المخازن والشركات الشريكة</p>
+            </div>
+
+            <!-- Warehouses grid -->
+            <div class="shams-warehouses">
+                <div class="wh-card" style="--i:0">
+                    <div class="wh-icon">🏢</div>
+                    <div class="wh-name">الشمس</div>
+                </div>
+                <div class="wh-card" style="--i:1">
+                    <div class="wh-icon">🏢</div>
+                    <div class="wh-name">الهادي</div>
+                </div>
+                <div class="wh-card" style="--i:2">
+                    <div class="wh-icon">🏢</div>
+                    <div class="wh-name">الرجاء</div>
+                </div>
+                <div class="wh-card" style="--i:3">
+                    <div class="wh-icon">🏢</div>
+                    <div class="wh-name">الجمعية</div>
+                </div>
+                <div class="wh-card" style="--i:4">
+                    <div class="wh-icon">🏢</div>
+                    <div class="wh-name">Infinity</div>
+                </div>
+                <div class="wh-card" style="--i:5">
+                    <div class="wh-icon">🏢</div>
+                    <div class="wh-name">Star</div>
+                </div>
+                <div class="wh-card" style="--i:6">
+                    <div class="wh-icon">🏢</div>
+                    <div class="wh-name">Prime</div>
+                </div>
+            </div>
+
+            <!-- Activities -->
+            <div class="shams-activities">
+                <h3 class="act-title">آليات العمل مع المخازن</h3>
+                <div class="act-grid">
+                    <div class="act-card">
+                        <div class="act-icon">🗓️</div>
+                        <div>
+                            <div class="act-h">اجتماع أسبوعي</div>
+                            <p class="act-p">مناقشة معوقات البيع والعمل على حلها</p>
+                        </div>
+                    </div>
+                    <div class="act-card">
+                        <div class="act-icon">📦</div>
+                        <div>
+                            <div class="act-h">مراجعة الأرصدة</div>
+                            <p class="act-p">مراجعة أرصدة الفروع وسحب بضاعة من الرئيسي وعمل طلبيات من الشركة</p>
+                        </div>
+                    </div>
+                    <div class="act-card">
+                        <div class="act-icon">🤝</div>
+                        <div>
+                            <div class="act-h">تواصل المشتريات</div>
+                            <p class="act-p">العمل على تواصل المشتريات مع بعض المخازن لضمان استمرارية التوريد</p>
+                        </div>
+                    </div>
+                    <div class="act-card">
+                        <div class="act-icon">💳</div>
+                        <div>
+                            <div class="act-h">التحصيل الأسبوعي</div>
+                            <p class="act-p">التحصيل الأسبوعي المنتظم من المخازن وضمان استمرارية التدفق النقدي</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Special quote -->
+            <div class="shams-quote">
+                <div class="quote-icon">💡</div>
+                <div class="quote-text">
+                    <p class="quote-label">الاستفادة</p>
+                    <p class="quote-main">" كيفية التعامل مع الوكلاء الحصريين "</p>
+                </div>
+            </div>
+
+            <!-- Shams Total Collections -->
+            <div class="shams-totals">
+                <h3 class="act-title">📊 إجمالي تحصيلات الشمس</h3>
+                <div class="shams-totals-grid">
+                    <div class="shams-total-card">
+                        <div class="shams-total-icon">💰</div>
+                        <div class="shams-total-value">31 مليون</div>
+                        <div class="shams-total-label">إجمالي التحصيلات</div>
+                        <div class="shams-total-sub">بمتوسط 2 مليون و 600 ألف في الشهر</div>
+                    </div>
+                    <div class="shams-total-card highlight-card">
+                        <div class="shams-total-icon">🏆</div>
+                        <div class="shams-total-value">4 مليون</div>
+                        <div class="shams-total-label">أعلى رقم وصلناله في الشهر</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <button class="nav-btn prev-btn" onclick="goView('view-agenda')"><svg viewBox="0 0 24 24">
+                <path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" />
+            </svg><span>الأجندة</span></button>
+        <div class="slide-indicator">مخزن الشمس</div>
+    </div>
+
+    <!-- =========== 2026 PLAN =========== -->
+    <div class="view scrollable" id="view-plan2026">
+        <div class="bg-circles">
+            <div class="circle c1"></div>
+            <div class="circle c2"></div>
+        </div>
+        <div class="section-inner" style="padding-top:70px;padding-bottom:90px">
+            <div class="sec-header-block">
+                <div class="sec-icon-big">🚀</div>
+                <h2 class="section-title">خطة 2026</h2>
+                <p class="section-sub">هدفها نمو المبيعات وتوسيع القاعدة</p>
+            </div>
+            <div class="plan-steps">
+                <div class="plan-step" style="--pi:0">
+                    <div class="ps-num">1</div>
+                    <div class="ps-content">
+                        <div class="ps-title">مخازن القطاعي بالمنطقة</div>
+                        <p class="ps-desc">العمل على استقطاب وتطوير مخازن القطاعي في المنطقة وتعظيم الحضور التوزيعي</p>
+                    </div>
+                    <div class="ps-icon">🏪</div>
+                </div>
+                <div class="plan-step" style="--pi:1">
+                    <div class="ps-num">2</div>
+                    <div class="ps-content">
+                        <div class="ps-title">زيادة عملاء OTC بـ Deal ثابت</div>
+                        <p class="ps-desc">توسيع قاعدة عملاء OTC من خلال عقود وصفقات ثابتة تضمن استمرارية المسحوبات</p>
+                    </div>
+                    <div class="ps-icon">📈</div>
+                </div>
+                <div class="plan-step" style="--pi:2">
+                    <div class="ps-num">3</div>
+                    <div class="ps-content">
+                        <div class="ps-title">تحويل أوردرات الموزعين لبيع مباشر</div>
+                        <p class="ps-desc">التنسيق مع مناديب الدعاية على استبدال أوردرات الموزعين بالبيع المباشر من
+                            الشركة</p>
+                    </div>
+                    <div class="ps-icon">🔄</div>
+                </div>
+                <div class="plan-step" style="--pi:3">
+                    <div class="ps-num">4</div>
+                    <div class="ps-content">
+                        <div class="ps-title">تحويل العملاء الآجل إلى نقدي</div>
+                        <p class="ps-desc">خطة منهجية لتحويل العملاء الآجل إلى نقدي لتحسين التدفق النقدي وتقليل المخاطر
+                        </p>
+                    </div>
+                    <div class="ps-icon">💵</div>
+                </div>
+                <div class="plan-step" style="--pi:4">
+                    <div class="ps-num">5</div>
+                    <div class="ps-content">
+                        <div class="ps-title">تنمية مهارات مناديب البيع</div>
+                        <p class="ps-desc">برامج تدريب وتطوير مستمرة لتحسين أداء وكفاءة فريق المبيعات في المنطقة</p>
+                    </div>
+                    <div class="ps-icon">👨‍💼</div>
+                </div>
+                <div class="plan-step" style="--pi:5">
+                    <div class="ps-num">6</div>
+                    <div class="ps-content">
+                        <div class="ps-title">العمل على صيدليات أمام المستشفيات</div>
+                        <p class="ps-desc">استهداف الصيدليات المتواجدة أمام المستشفيات لزيادة مسحوبات الأدوية ذات
+                            الوصفات الطبية</p>
+                    </div>
+                    <div class="ps-icon">🏥</div>
+                </div>
+                <div class="plan-step" style="--pi:6">
+                    <div class="ps-num">7</div>
+                    <div class="ps-content">
+                        <div class="ps-title">تارجت سنة 2026</div>
+                        <p class="ps-desc">الهدف الطموح للسنة: 36 مليون جنيه · العمل على تحقيقه من خلال كل الاستراتيجيات
+                            المذكورة</p>
+                    </div>
+                    <div class="ps-icon">🎯</div>
+                </div>
+                <div class="plan-step" style="--pi:7">
+                    <div class="ps-num">8</div>
+                    <div class="ps-content">
+                        <div class="ps-title">الأطباء والاستثمار في العلاقات</div>
+                        <p class="ps-desc">خطة استثمار في العلاقات مع الأطباء المؤثرين ومراجعة آليات التعاون الحالية</p>
+                    </div>
+                    <div class="ps-icon">🩺</div>
+                </div>
+            </div>
+
+            <!-- Doctors Tables Section -->
+            <div class="doctors-tables-section">
+                <div class="doctors-table-card invest">
+                    <div class="dt-header">
+                        <div class="dt-icon">💎</div>
+                        <div>
+                            <h3 class="dt-title">دكاتره محتاجين نستثمر معاهم في الشغل</h3>
+                            <p class="dt-subtitle">26 طبيب · فرص استثمارية</p>
+                        </div>
+                    </div>
+                    <div class="table-scroll">
+                        <table class="doctors-table">
+                            <thead>
+                                <tr>
+                                    <th>م</th>
+                                    <th>اسم الدكتور</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>محمد السويدي</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>عاطف نصير</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>مجدي راشد</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>محمد ثروت</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>محمد جمال الحسيني</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>محمد حنفي</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>محمد صلاح</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>محمد عبدالحميد</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>احمد السيد الشامي</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>أحمد عميره</td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>طارق نصر الله</td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td>محمد خضر</td>
+                                </tr>
+                                <tr>
+                                    <td>13</td>
+                                    <td>عمرو الدرس</td>
+                                </tr>
+                                <tr>
+                                    <td>14</td>
+                                    <td>علي الاسود</td>
+                                </tr>
+                                <tr>
+                                    <td>15</td>
+                                    <td>يامن صفوت</td>
+                                </tr>
+                                <tr>
+                                    <td>16</td>
+                                    <td>محمد شعبان</td>
+                                </tr>
+                                <tr>
+                                    <td>17</td>
+                                    <td>محمد رضا</td>
+                                </tr>
+                                <tr>
+                                    <td>18</td>
+                                    <td>هشام شومان</td>
+                                </tr>
+                                <tr>
+                                    <td>19</td>
+                                    <td>تامر مصطفي</td>
+                                </tr>
+                                <tr>
+                                    <td>20</td>
+                                    <td>باسم الجيار</td>
+                                </tr>
+                                <tr>
+                                    <td>21</td>
+                                    <td>عمر المغربل</td>
+                                </tr>
+                                <tr>
+                                    <td>22</td>
+                                    <td>محمد عبدالجليل</td>
+                                </tr>
+                                <tr>
+                                    <td>23</td>
+                                    <td>ابراهيم عكيله</td>
+                                </tr>
+                                <tr>
+                                    <td>24</td>
+                                    <td>عاطف نصير</td>
+                                </tr>
+                                <tr>
+                                    <td>25</td>
+                                    <td>هاله موافي</td>
+                                </tr>
+                                <tr>
+                                    <td>26</td>
+                                    <td>محمد رشاد</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="doctors-table-card review">
+                    <div class="dt-header">
+                        <div class="dt-icon">🔍</div>
+                        <div>
+                            <h3 class="dt-title">اسماء محتاجين مراجعه العمل معهم</h3>
+                            <p class="dt-subtitle">13 طبيب · مراجعة مطلوبة</p>
+                        </div>
+                    </div>
+                    <div class="table-scroll">
+                        <table class="doctors-table">
+                            <thead>
+                                <tr>
+                                    <th>م</th>
+                                    <th>اسم الدكتور</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>عاطف خليل</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>محمد احمد مصطفي</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>محمد عبدالمقصود</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>محمد فاروق</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>مصطفي العايدي</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>فرج شلبي</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>عمر السنطاوي</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>احمد سلامه</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>علاء حامد</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>شادي كمال</td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>محمود الشيمي</td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td>احمد عصمت</td>
+                                </tr>
+                                <tr>
+                                    <td>13</td>
+                                    <td>هاني خضير</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="nav-btn prev-btn" onclick="goView('view-agenda')"><svg viewBox="0 0 24 24">
+                <path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" />
+            </svg><span>الأجندة</span></button>
+        <div class="slide-indicator">خطة 2026</div>
+    </div>
+
+    <!-- =========== PROPOSAL =========== -->
+    <div class="view scrollable" id="view-proposal">
+        <div class="bg-circles">
+            <div class="circle c1"></div>
+            <div class="circle c2"></div>
+        </div>
+        <div class="section-inner" style="padding-top:70px;padding-bottom:90px">
+            <div class="sec-header-block">
+                <div class="sec-icon-big">💎</div>
+                <h2 class="section-title">المقترح</h2>
+                <p class="section-sub">رؤية مستقبلية · مقدمة إلى Drug Pharma Egypt</p>
+            </div>
+
+            <!-- PROPOSAL 1 -->
+            <div class="proposal-card p1">
+                <div class="prop-num">01</div>
+                <div class="prop-icon-big">📝</div>
+                <h3 class="prop-title">سيستم التقرير اليومي</h3>
+                <p class="prop-sub">نظام متكامل لمتابعة مناديب البيع</p>
+                <div class="prop-features">
+                    <div class="pf"><span class="pf-ico">✅</span><span>تقرير يومي إلكتروني لكل مندوب</span></div>
+                    <div class="pf"><span class="pf-ico">✅</span><span>Feedback ثابت ومنتظم عن كل عميل</span></div>
+                    <div class="pf"><span class="pf-ico">✅</span><span>متابعة فورية للأهداف اليومية</span></div>
+                    <div class="pf"><span class="pf-ico">✅</span><span>تحليل أداء الزيارات والمخرجات</span></div>
+                </div>
+            </div>
+
+            <!-- PROPOSAL 2 – APP -->
+            <div class="proposal-card p2 app-card">
+                <div class="app-glow"></div>
+                <div class="prop-num app-num">02</div>
+                <div class="app-logo-wrap">
+                    <img src="drug_pharma_logo.png" alt="Drug Pharma App" class="app-logo-img" />
+                    <div class="app-logo-ring"></div>
+                </div>
+                <h3 class="app-title">Drug Pharma<br /><span class="app-word">Application</span></h3>
+                <p class="app-tagline">مقترح أبليكيشن لمساعدة الصيدليات للوصول لمنتجاتنا أسرع وأسهل</p>
+            </div>
+
+        </div>
+        <button class="nav-btn prev-btn" onclick="goView('view-agenda')"><svg viewBox="0 0 24 24">
+                <path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" />
+            </svg><span>الأجندة</span></button>
+        <div class="slide-indicator">المقترح</div>
+    </div>
+
+    <!-- Profile Modal -->
+    <div class="pmodal-overlay" id="profile-modal" onclick="closeProfile()">
+        <div class="pmodal-box" onclick="event.stopPropagation()">
+            <button class="pmodal-close" onclick="closeProfile()">✕</button>
+            <div class="pmodal-top" id="pmodal-top"></div>
+            <div class="pmodal-body" id="pmodal-body"></div>
+        </div>
+    </div>
+
+    <!-- Generic Modal -->
+    <div class="modal-overlay" id="modal" onclick="closeModal()">
+        <div class="modal-box" onclick="event.stopPropagation()">
+            <h3 id="modal-title"></h3>
+            <p id="modal-body"></p>
+            <button class="modal-close" onclick="closeModal()">حسناً</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
